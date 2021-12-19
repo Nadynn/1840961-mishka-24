@@ -4,7 +4,7 @@
   "description": "Личный проект «Погнали» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-<<<<<<< HEAD
+
     "autoprefixer": "10.0.2",
     "browser-sync": "2.26.13",
     "gulp": "4.0.2",
@@ -15,17 +15,7 @@
     "postcss": "8.1.7",
     "stylelint": "13.7.2",
     "stylelint-config-htmlacademy": "0.1.4"
-=======
-    "autoprefixer": "10.4.0",
-    "browser-sync": "2.27.7",
-    "gulp": "4.0.2",
-    "gulp-less": "5.0.0",
-    "gulp-plumber": "1.2.1",
-    "gulp-postcss": "9.0.1",
-    "postcss": "8.3.11",
-    "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.11"
->>>>>>> 9f6a15b1f8608a660cdfc0ec113e9e5158c9ed46
+
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -37,13 +27,11 @@
   "browserslist": [
     "last 2 versions",
     "not dead",
-<<<<<<< HEAD
-    "not ie <= 11"
-=======
+
     "not ie <= 11",
     "not op_mini all",
     "not < 0.25%"
->>>>>>> 9f6a15b1f8608a660cdfc0ec113e9e5158c9ed46
+
   ],
   "editorconfig-cli": [
     "*.json",

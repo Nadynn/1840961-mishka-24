@@ -1,22 +1,21 @@
-
-import gulp from 'gulp';
-import plumber from 'gulp-plumber';
-import less from 'gulp-less';
-import postcss from 'gulp-postcss';
-import autoprefixer from 'autoprefixer';
-import browser from 'browser-sync';
+const gulp = require("gulp");
+const plumber = require("gulp-plumber");
+const sourcemap = require("gulp-sourcemaps");
+const less = require("gulp-less");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const sync = require("browser-sync").create();
 
 // Styles
 
-export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
+const styles = () => {
+  return gulp.src("source/less/style.less")
     .pipe(plumber())
-
+    .pipe(sourcemap.init())
     .pipe(less())
     .pipe(postcss([
       autoprefixer()
     ]))
-
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
@@ -28,7 +27,6 @@ exports.styles = styles;
 
 const server = (done) => {
   sync.init({
-
     server: {
       baseDir: 'source'
     },
@@ -49,6 +47,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-
   styles, server, watcher
 );

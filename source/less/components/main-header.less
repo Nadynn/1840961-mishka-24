@@ -1,22 +1,102 @@
 .main-header {
-  background-image: url("/img/main-img-mobile.jpg");
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("/img/hero-desktop.jpg");
+  background-position: center top;
+  background-color: #f9f9f9;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    background-size: auto;
+    margin-top: -70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+    background-size: auto;
+    margin-top: -70px;
+  }
 }
 
 .main-header__title {
-  width: 260px;
+  width: 255px;
   min-height: 90px;
+  margin: 0 auto;
+  padding-top: 73px;
+  padding-bottom: 88px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    min-height: 100px;
+    margin: 0 auto;
+    padding-top: 155px;
+    padding-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+    min-height: 114px;
+    margin: 0 auto;
+    padding-top: 158px;
+    padding-bottom: 355px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.main-header__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .main-header__first-section {
   width: 320px;
   min-height: 103px;
   background: #63d1bb;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    min-height: 119px;
+    margin: 0 0 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+  }
 }
 
 .main-header__second-section {
   width: 320px;
   min-height: 103px;
   background: #56c3b2;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    min-height: 119px;
+    margin: 0 auto 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+  }
 }
 
 .main-header__link {

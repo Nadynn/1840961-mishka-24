@@ -6,6 +6,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 290px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    margin-right: 50px;
+  }
 }
 
 .copyright__text {

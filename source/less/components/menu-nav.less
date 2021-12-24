@@ -1,19 +1,28 @@
+.menu-nav {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+}
+
 .menu-nav__toggle {
   background-color: transparent;
+  color: #000000;
   border: none;
   padding: 10px;
   position: absolute;
   top: 15px;
   right: 30px;
+  display: none;
 }
 
 .menu-nav__container {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-}
+  width: 320px;
 
-.menu-nav__list {
-  list-style: none;
-  padding: 0;
+  @media (min-width: @tablet-width) {
+    width: 787px;
+    margin: 0;
+  }
 }

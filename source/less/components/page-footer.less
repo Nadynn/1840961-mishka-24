@@ -4,9 +4,34 @@
   background-color: #f1f1f1;
   width: 320px;
   min-height: 160px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    min-height: 143px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
 }
 
 .page-footer__logo {
   width: @mobile-width-only;
   display: none;
+
+  @media (min-width: @tablet-width) {
+    width: 188px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 102px;
+    margin-left: 50px;
+  }
 }

@@ -5,6 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 303px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 765px;
+  }
 }
 
 .social__list {

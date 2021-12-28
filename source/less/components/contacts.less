@@ -10,7 +10,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    width: 1052px;
+    width: 1050px;
     min-height: 457px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -124,6 +124,8 @@
 }
 
 .contacts__write {
+  margin-bottom: 39px;
+
   @media (min-width: @tablet-width) {
     width: 230px;
     margin: 0 auto;
@@ -132,7 +134,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 52px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
@@ -144,6 +145,14 @@
 .contacts__maps-container {
   @media (min-width: @tablet-width) {
     width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 527px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
   }
 }
 
@@ -159,10 +168,5 @@
     margin: 0;
     display: grid;
     width: 527px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    padding-left: 67px;
   }
 }

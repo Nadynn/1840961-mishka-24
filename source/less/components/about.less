@@ -1,3 +1,9 @@
+.about {
+  @media (min-width: @desktop-width) {
+    margin-top: 164px;
+  }
+}
+
 .about__title {
   width: 260px;
   margin: 0 auto;
@@ -16,10 +22,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
     font-size: 53px;
     line-height: 57px;
-    padding-left: 225px;
+    margin: 0;
+    margin-left: 225px;
   }
 }
 
@@ -38,9 +44,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
     margin: 0 auto;
-    padding-left: 225px;
+    margin-left: 225px;
   }
 }
 
@@ -51,7 +56,6 @@
 
 .about__item svg {
   margin: 0;
-  padding-left: 30px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -60,7 +64,6 @@
 }
 
 .about__description {
-  padding-left: 30px;
   width: 260px;
   min-height: 40px;
   font-family: inherit;

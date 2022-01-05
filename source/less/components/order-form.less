@@ -1,0 +1,32 @@
+.order-form__mark {
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 30px;
+  }
+}
+
+.order-form__submit {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 55px;
+  }
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 230px;
+    margin: 0;
+    padding: 0;
+  }
+}

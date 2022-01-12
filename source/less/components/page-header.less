@@ -1,11 +1,16 @@
 .page-header__container {
+  width: 320px;
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
+    width: 768px;
     display: grid;
     grid-template-columns: 217px 156px 85px 310px;
     grid-template-rows: 88px 70px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 1150px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 235px 270px 245px 85px 315px;
@@ -46,6 +51,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    z-index: 2;
   }
 
   @media (min-width: @desktop-width) {

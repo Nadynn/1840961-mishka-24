@@ -67,24 +67,6 @@
         <p class="site-list__delivery">Бесплатная доставка по России</p>
       </div>
     </header>
-
-    <script>
-      var navMenu= document.querySelector('.menu-nav');
-      var navToggle = document.querySelector('menu-nav__toggle');
-
-      navMenu.classList.remove('menu-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMenu.classList.contains('menu-nav--closed')) {
-          navMenu.classList.remove('menu-nav--closed');
-          navMenu.classList.add('menu-nav--opened');
-        } else {
-          navMenu.classList.add('menu-nav--closed');
-          navMenu.classList.remove('menu-nav--opened');
-        }
-      });
-    </script>
-
     <main class="page-main">
       <section class="index-main">
         <h1 class="index-main__title">Каталог товаров</h1>
@@ -170,6 +152,9 @@
             </svg>
             <h3 class="video__title">Процесc производства</h3>
           </div>
+          <img class="video__photo-mobile" src="img/video-mobile.jpg" width="260" height="150" alt="">
+          <img class="video__photo-tablet" src="img/video-tablet.jpg" width="668" height="455" alt="">
+          <img class="video__photo-desktop" src="img/video-desktop.jpg" width="682" height="455" alt="">
           <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a href="form.html" class="video__button button">Сделать заказ</a>
         </div>
@@ -226,6 +211,21 @@
       </div>
     </footer>
   </div>
+  <script>
+    var navMenu= document.querySelector('.menu-nav');
+    var navToggle = document.querySelector('.menu-nav__toggle');
 
+    navMenu.classList.remove('menu-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMenu.classList.contains('menu-nav--closed')) {
+        navMenu.classList.remove('menu-nav--closed');
+        navMenu.classList.add('menu-nav--opened');
+      } else {
+        navMenu.classList.add('menu-nav--closed');
+        navMenu.classList.remove('menu-nav--opened');
+      }
+    });
+  </script>
 </body>
 </html>

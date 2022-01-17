@@ -28,8 +28,8 @@
   margin: 0 auto;
 
   @media (max-width: @mobile-width-only) {
-    border-top: 1px solid #56c3b2;
     width: 260px;
+    position: relative;
   }
 
   @media (min-width: @tablet-width) {
@@ -40,7 +40,18 @@
     width: 1050px;
     margin: 0;
     padding-left: 97px;
-    grid-template-columns: 128px 499px;
+    grid-template-columns: 128px 700px;
+  }
+}
+
+.form-field__border-mobile {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    background-color: #62d1ba;
+    width: 200px;
+    height: 1px;
+    top: 24px;
+    left: 69px;
   }
 }
 
@@ -297,7 +308,21 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-left: 20%;
+    margin-left: 136px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 98px;
+  }
+}
+
+.form-field__input--contacts-mail {
+  @media (min-width: @tablet-width) {
+    margin-left: 111px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 72px;
   }
 }
 
@@ -343,14 +368,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 526px;
+    width: 501px;
     min-height: 142px;
-    margin-left: 105px;
+    margin-left: 137px;
   }
 
   @media (min-width: @desktop-width) {
     width: 700px;
-    margin: 0 auto;
+    margin-left: 90px;
   }
 }
 

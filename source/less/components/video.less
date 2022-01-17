@@ -87,11 +87,38 @@
   }
 }
 
+.video__player {
+  position: relative;
+}
+
 .video__photo-mobile {
   display: flex;
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.video__play-photo {
+  position: absolute;
+  top: 37px;
+  right: 72px;
+  width: 100px;
+  height: 77px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 102px;
+    height: 78px;
+    top: 191px;
+    right: 266px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 101px;
+    height: 77px;
   }
 }
 
@@ -129,6 +156,7 @@
     width: 565px;
     font-size: 15px;
     line-height: 30px;
+    padding: 0;
     padding-left: 40px;
   }
 

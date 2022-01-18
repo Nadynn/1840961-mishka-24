@@ -2,13 +2,9 @@
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
   list-style: none;
-  color: #000000;
   padding: 0;
   margin: 0;
-  display: none;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -24,6 +20,25 @@
   }
 }
 
+.site-list a {
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+    display: block;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    list-style: none;
+    color: #000000;
+    padding: 28px 33px 27px 76px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top: 1px solid rgba(236, 236, 236, 1);
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+  }
+}
+
 .site-list__item {
   @media (min-width: @tablet-width) {
     font-size: 15px;
@@ -33,7 +48,16 @@
   }
 }
 
-.site-list_item-1 {
+.site-list__login-icon {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    fill: #000000;
+  }
+}
+
+.site-list__item-1 {
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -52,7 +76,7 @@
   }
 }
 
-.site-list_item-2 {
+.site-list__item-2 {
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -69,13 +93,15 @@
   }
 }
 
-.site-list_item-3 .site-list__text {
+.site-list__item-3 .site-list__text {
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.site-list_item-3 {
+.site-list__item-3 {
+  padding: 0;
+
   @media (min-width: @tablet-width) {
     min-height: 88px;
     grid-column-start: 3;
@@ -113,7 +139,7 @@
   }
 }
 
-.site-list_item-4 {
+.site-list__item-4 {
   @media (min-width: @tablet-width) {
     grid-column-start: 4;
     grid-column-end: 5;
@@ -129,10 +155,8 @@
   }
 }
 
-.site-list_item-5 {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
+.site-list__item-5 {
+  display: none;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -143,10 +167,8 @@
   }
 }
 
-.site-list_item-6 {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
+.site-list__item-6 {
+  display: none;
 
   @media (min-width: @desktop-width) {
     display: flex;

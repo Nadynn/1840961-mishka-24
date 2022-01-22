@@ -91,14 +91,6 @@
   position: relative;
 }
 
-.video__photo-mobile {
-  display: flex;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
 .video__play-photo {
   position: absolute;
   top: 37px;
@@ -119,24 +111,6 @@
   @media (min-width: @desktop-width) {
     width: 101px;
     height: 77px;
-  }
-}
-
-.video__photo-tablet {
-  @media (max-width: @mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.video__photo-desktop {
-  display: none;
-
-  @media (min-width: @desktop-width) {
-    display: flex;
   }
 }
 

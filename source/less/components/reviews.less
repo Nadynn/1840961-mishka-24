@@ -5,7 +5,7 @@
 
   @media (min-width: @tablet-width) {
     width: 668px;
-    background-image: url("/img/review-photo.jpg");
+    background-image: url("../img/review-photo.jpg");
     background-repeat: no-repeat;
     display: grid;
     grid-template-rows: 152px 152px 152px;
@@ -21,6 +21,12 @@
     padding: 0;
     padding-left: 175px;
     padding-right: 50px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-photo@2x.jpg");
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
   }
 }
 

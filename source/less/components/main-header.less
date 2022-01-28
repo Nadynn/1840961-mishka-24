@@ -1,17 +1,15 @@
 .main-header {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   background-image: url("/img/hero-desktop.jpg");
   background-position: center top;
   background-color: #f9f9f9;
   background-size: 112%;
   background-repeat: no-repeat;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-width: @tablet-width) {
     width: 768px;
     background-size: auto;
-    margin-top: -70px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/hero-desktop@2x.jpg");
@@ -65,73 +63,158 @@
 }
 
 .main-header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 65px;
+
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0;
     margin-bottom: 54px;
   }
 }
 
-.main-header__first-section {
-  width: 320px;
-  min-height: 103px;
-  background: #63d1bb;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    width: 334px;
-    min-height: 119px;
-    margin: 0 0 0 auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 525px;
-  }
-}
-
-.main-header__second-section {
-  width: 320px;
-  min-height: 103px;
-  background: #56c3b2;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    width: 334px;
-    min-height: 119px;
-    margin: 0 auto 0 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 525px;
-  }
-}
 
 .main-header__link {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-decoration: none;
-}
-
-.main-header__slogan {
-  width: 130px;
-  min-height: 48px;
-  margin: 0;
-  font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
-  padding-top: 25px;
-  padding-bottom: 31px;
-  padding-left: 32px;
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
 }
 
-.main-header__svg {
-  text-align: center;
-  padding-left: 78px;
+.main-header__link:hover .main-header__link-content {
+  transform: translate(0, -5px);
+}
+
+.main-header__link:active .main-header__link-content::after {
+  opacity: 0.6;
+}
+
+.main-header__link-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 21px 0;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 0;
+  }
+}
+
+.main-header__link-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 450px;
+    padding: 0;
+  }
+}
+
+.main-header__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 668px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 1050px;
+  }
+}
+
+.main-header__item {
+  flex-grow: 1;
+  position: relative;
+}
+
+.main-header__item:first-child .main-header__link-wrapper {
+  background-color: #63d1bb;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
+.main-header__item:first-child .main-header__link-content {
+  &::after {
+    background-image: url("../img/main-header-section/icon-interior.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 62px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 36px;
+  }
+}
+
+.main-header__item:last-child .main-header__link-wrapper {
+  background-color: #56c3b2;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+  }
+}
+
+.main-header__item:last-child .main-header__link-content {
+  &::after {
+    background-image: url("../img/main-header-section/icon-toy.svg");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 62px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 36px;
+  }
+}
+
+.main-header__item:first-child:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #63d1bb;
+  top: -5px;
+}
+
+.main-header__item:last-child:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #56c3b2;
+  top: -5px;
+}
+
+.main-header__link-content::after {
+  content: "";
+  display: block;
 }

@@ -1,3 +1,21 @@
+.reviews {
+  background-image: url("/img/zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-height: 650px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 100%;
+    min-height: 520px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    margin: 0 auto;
+    min-height: 550px;
+  }
+}
+
 .reviews__container {
   width: 260px;
   margin: 0 auto;

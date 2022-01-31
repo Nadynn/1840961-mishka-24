@@ -44,7 +44,6 @@
     grid-template-columns: 1fr 1fr;
     padding: 0;
     padding-left: 175px;
-    padding-right: 50px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review-photo@2x.jpg");
@@ -79,6 +78,7 @@
 
 .reviews__comment {
   @media (min-width: @tablet-width) {
+    width: 668px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -87,6 +87,10 @@
     flex-direction: column;
     justify-content: center;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 875px;
   }
 }
 
@@ -121,7 +125,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 767px;
+    width: 875px;
   }
 }
 

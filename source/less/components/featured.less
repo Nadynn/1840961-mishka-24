@@ -1,3 +1,20 @@
+.featured {
+  background-image: url("/img/zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-height: 822px;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 100%;
+    min-height: 629px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: none;
+  }
+}
+
 .featured__container {
   width: 260px;
   margin: 0 auto;
@@ -8,6 +25,11 @@
 
   @media (min-width: @desktop-width) {
     width: 1050px;
+    background-image: url("/img/zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    min-height: 822px;
   }
 }
 
@@ -15,7 +37,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 334px 334px;
-    grid-template-rows: 94px 122px 117px 115px 52px;
+    grid-template-rows: 145px 96px 172px 94px 53px;
   }
 
   @media (min-width: @desktop-width) {
@@ -41,6 +63,7 @@
     line-height: 50px;
     margin: 0;
     padding: 0;
+    padding-top: 18px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -77,9 +100,10 @@
     width: 100px;
     line-height: 17px;
     display: flex;
-    align-items: center;
     text-align: center;
-    padding-left: 232px;
+    justify-content: center;
+    padding-top: 63px;
+    padding-left: 222px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -88,6 +112,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
+    padding-top: 61px;
     padding-left: 73px;
     text-align: center;
     grid-column-start: 1;
@@ -113,6 +138,7 @@
     font-size: 17px;
     line-height: 30px;
     margin: 0;
+    padding: 0;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -133,6 +159,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    padding-top: 38px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
@@ -204,6 +231,20 @@
   }
 }
 
+.featured__description-2 {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-left: 24px;
+  }
+}
+
+.featured__description-3 {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-left: 38px;
+  }
+}
+
 .featured__photo {
   margin: 0 auto;
   width: 260px;
@@ -213,6 +254,7 @@
     display: grid;
     width: 334px;
     height: 404px;
+    padding-top: 6px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -241,8 +283,10 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    padding-top: 41px;
+    padding-top: 40px;
+    display: flex;
     margin: 0;
+    padding-left: 73px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;

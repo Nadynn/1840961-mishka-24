@@ -5,6 +5,7 @@
   background-color: #ffffff;
   margin: 0;
   padding: 0;
+  z-index: 1;
 
   &--nojs {
     position: static;
@@ -21,12 +22,12 @@
   &::before {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 17px;
     left: 17px;
     width: 20px;
     height: 2px;
     background-color: #231f20;
-    box-shadow: 0 8px 0 0 #231f20, 0 16px 0 0 #231f20;
+    box-shadow: 0 7px 0 0 #231f20, 0 14px 0 0 #231f20;
   }
 }
 
@@ -87,16 +88,20 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 330px;
+    grid-template-columns: 322px 346px;
     align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 716px 334px;
   }
 }
 
 .menu-nav__toggle {
   display: block;
   position: absolute;
-  top: -72px;
-  right: 30px;
+  top: -71px;
+  right: 17px;
   z-index: 2;
   width: 50px;
   height: 50px;
@@ -151,7 +156,7 @@
   left: -36px;
 
   @media (min-width: @tablet-width) {
-    left: 0;
+    left: 33px;
   }
 }
 
@@ -240,9 +245,9 @@
 .menu-nav__list {
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 160px 155px;
     margin-top: 88px;
-    column-gap: 5px;
+    column-gap: 9px;
   }
 
   @media (min-width: @desktop-width) {
@@ -256,7 +261,7 @@
 
 .menu-nav__list .menu-nav__item {
   @media (min-width: @tablet-width) {
-    margin-top: 20px;
+    margin-top: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -279,9 +284,14 @@
 .menu-nav__list-user {
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 75px 267px;
     grid-template-rows: 88px;
     column-gap: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 68px 267px;
+    column-gap: 0;
   }
 }
 
@@ -334,9 +344,9 @@
 .menu-nav__item--cart a {
   @media (min-width: @tablet-width) {
     font-size: 17px;
-    line-height: 24px;
+    line-height: 25px;
     font-weight: 700;
     color: #000000;
-    padding-left: 32px;
+    padding-left: 85px;
   }
 }

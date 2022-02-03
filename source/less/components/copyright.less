@@ -10,6 +10,7 @@
   @media (min-width: @tablet-width) {
     width: 290px;
     margin: 0;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -29,4 +30,16 @@
 
 .copyright__link {
   height: 34px;
+}
+
+.copyright__link svg {
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: rgba(70, 193, 174, 0.3);
+  }
 }

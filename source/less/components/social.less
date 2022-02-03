@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 30px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -17,17 +18,25 @@
 }
 
 .social__list {
-  width: 142px;
+  max-width: 245px;
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   list-style-type: none;
+  column-gap: 40px;
+  row-gap: 20px;
 }
 
-.social__item {
-  margin: auto;
-}
 
-.social__item-facebook {
-  margin: 0 auto;
+.social__link svg {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: rgba(70, 193, 174, 0.3);
+  }
 }

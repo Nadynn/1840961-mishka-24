@@ -1,84 +1,192 @@
 .about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about__container {
+  width: 260px;
+  padding: 11px 30px 30px 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    padding: 20px 45px 22px 45px;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 1150px;
-    margin: 0 auto;
+    width: 1050px;
+    padding: 69px 83px 0;
+    display: grid;
+    grid-template-columns: 143px 1fr;
+    margin-bottom: 30px;
   }
 }
 
 .about__title {
-  width: 260px;
-  margin: 0 auto;
-  padding-bottom: 25px;
   font-family: inherit;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
+  margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
-    width: 668px;
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    margin-bottom: 45px;
   }
 }
 
-.about__container {
-  width: 260px;
-  margin: 0 auto;
+.about__list {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    padding: 0;
-    width: 668px;
-    height: 458px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
-    width: 667px;
+    grid-template-columns: 352px 377px;
+    grid-column: 2;
+    grid-row: 2;
   }
 }
 
 .about__item {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  &:nth-child(4) {
+    order: 1;
+  }
+
+  &:nth-child(2),
+  &:nth-child(5) {
+    order: 2;
+  }
+
+  &:nth-child(3n) {
+    order: 3;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &:nth-child(1)::before {
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 38px;
+    background-image: url("/img/about-section/icon-about-flower.svg");
+    background-repeat: no-repeat;
+    margin-left: 9px;
+    margin-bottom: 16px;
+  }
+
+  &:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    width: 47px;
+    height: 27px;
+    background-image: url("/img/about-section/icon-about-money.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 26px;
+  }
+
+  &:nth-child(3)::before {
+    content: "";
+    display: inline-block;
+    width: 34px;
+    height: 27px;
+    background-image: url("/img/about-section/icon-about-heart.svg");
+    background-repeat: no-repeat;
+    margin-left: 7px;
+    margin-bottom: 27px;
+  }
+
+  &:nth-child(4)::before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 34px;
+    background-image: url("/img/about-section/icon-about-ball.svg");
+    background-repeat: no-repeat;
+    margin-left: 7px;
+    margin-bottom: 19px;
+  }
+
+  &:nth-child(5)::before {
+    content: "";
+    display: inline-block;
+    width: 55px;
+    height: 23px;
+    background-image: url("/img/about-section/icon-about-rocket.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 26px;
+  }
+
+  &:nth-child(6)::before {
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 32px;
+    background-image: url("/img/about-section/icon-about-present.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 58px;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 64px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 57px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 57px;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 64px;
+    }
+  }
 }
 
 .about__item svg {
   margin: 0;
+  padding-left: 4px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
     margin: 0;
-  }
-}
-
-.about__description {
-  width: 260px;
-  min-height: 40px;
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
-
-  @media (min-width: @tablet-width) {
-    width: 334px;
-    font-size: 20px;
-    line-height: 22px;
-    padding: 0;
-    padding-top: 15px;
-    padding-bottom: 58px;
-    margin: 0;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 350px;
+    margin-top: 50px;
   }
 }

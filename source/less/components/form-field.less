@@ -5,14 +5,15 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 50px;
-    padding-bottom: 21px;
+    padding-bottom: 16px;
   }
 }
 
 .form-field__wrapper:nth-child(2n) {
   @media (min-width: @tablet-width) {
     background-color: #f1f1f1;
-    padding-bottom: 23px;
+    padding-top: 48px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,12 +23,19 @@
 
 .form-field__wrapper:nth-child(3n) {
   @media (min-width: @tablet-width) {
-    padding-top: 48px;
-    padding-bottom: 23px;
+    padding-top: 43px;
+    padding-bottom: 38px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 50px;
+  }
+}
+
+.form-field__wrapper:nth-child(4) {
+  @media (min-width: @tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 30px;
   }
 }
 
@@ -55,6 +63,18 @@
   }
 }
 
+.form-field__color {
+  @media (min-width: @tablet-width) {
+    margin-left: 49px;
+  }
+}
+
+.form-field__set-name {
+  @media (min-width: @tablet-width) {
+    margin-left: 49px;
+  }
+}
+
 .form-field__border-mobile {
   @media (max-width: @mobile-width-only) {
     position: absolute;
@@ -62,12 +82,16 @@
     width: 200px;
     height: 1px;
     top: 24px;
-    left: 69px;
+    left: 60px;
   }
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.form-field__border-mobile-3 {
+  top: 15px;
 }
 
 .form-field__filter-list {
@@ -76,20 +100,24 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 10px;
 }
 
 .form-field__filter-item {
-  margin-bottom: 20px;
-
   @media (min-width: @tablet-width) {
     margin-bottom: 25px;
   }
 }
 
+.form-field__filter-item-box {
+  margin-bottom: 9px;
+}
+
 .form-field__filter-list--color {
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 262px 237px;
+    grid-template-columns: 261px 237px;
+    row-gap: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -103,6 +131,7 @@
   flex-direction: column;
   list-style-type: none;
   margin: 0;
+  margin-top: 2px;
   padding: 0;
 }
 
@@ -114,12 +143,29 @@
   text-transform: uppercase;
   font-weight: 700;
   padding-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+  margin-top: 17px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
     padding-top: 20px;
+  }
+}
+
+.form-field__name-2 {
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding: 18px 0 0;
+  }
+}
+
+.form-field__name-3 {
+  margin-top: 9px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 6px;
   }
 }
 
@@ -130,7 +176,7 @@
 }
 
 .form-field__control-label {
-  padding-left: 70px;
+  padding-left: 60px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -179,7 +225,7 @@
 .form-field__control-input[type="checkbox"]:focus + .form-field__control-mark,
 .form-field__control-input[type="radio"]:active + .form-field__control-mark,
 .form-field__control-input[type="radio"]:focus + .form-field__control-mark {
-  border-color: #63d1bb;
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .form-field__control-input[type="radio"]:checked + .form-field__control-mark {
@@ -241,7 +287,7 @@
 }
 
 .form-field__user-item {
-  margin-bottom: 30px;
+  margin-bottom: 21px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -249,12 +295,12 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 }
 
 .form-field__input {
-  padding: 17px 0;
+  padding: 16px 0;
   font-size: 17px;
   line-height: 18px;
   outline: none;
@@ -278,6 +324,20 @@
   @media (min-width: @tablet-width) {
     padding: 18px;
     font-size: 19px;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.form-field__input-family {
+  @media (min-width: @tablet-width) {
+    padding-top: 24px;
+  }
+}
+
+.form-field__input-father {
+  @media (min-width: @tablet-width) {
+    padding-top: 24px;
   }
 }
 
@@ -289,7 +349,12 @@
   @media (min-width: @tablet-width) {
     font-size: 19px;
     margin-right: 24px;
+    margin-top: 13px;
   }
+}
+
+.form-field__input-label--name {
+  margin-top: 5px;
 }
 
 .form-field__contacts-list {
@@ -298,12 +363,14 @@
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0 auto;
+  margin-top: 5px;
   padding: 0;
   width: 260px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
     width: 668px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -316,26 +383,26 @@
 .form-field__contacts-item {
   position: relative;
   display: flex;
+  margin-bottom: 19px;
 
   @media (max-width: @mobile-width-only) {
     flex-direction: column;
-    border-top: 1px solid #56c3b2;
   }
 }
 
 .form-field__contacts-item1 {
   @media (max-width: @mobile-width-only) {
-    margin-bottom: 40px;
+    margin-bottom: 27px;
   }
 }
 
 .form-field__input--contacts {
   @media (max-width: @mobile-width-only) {
-    margin-top: 30px;
+    margin-top: 29px;
   }
 
   @media (min-width: @tablet-width) {
-    margin-left: 136px;
+    margin-left: 134px;
   }
 
   @media (min-width: @desktop-width) {
@@ -345,11 +412,12 @@
 
 .form-field__input--contacts-mail {
   @media (max-width: @mobile-width-only) {
-    padding-top: 34px;
+    padding-top: 44px;
   }
 
   @media (min-width: @tablet-width) {
     margin-left: 109px;
+    padding-top: 16px;
   }
 
   @media (min-width: @desktop-width) {
@@ -366,19 +434,37 @@
 
   @media (min-width: @tablet-width) {
     align-self: center;
+    padding-top: 1px;
   }
 }
 
 .form-field__icon {
   position: absolute;
-  right: 12px;
-  bottom: 19px;
 }
 
+.form-field__icon-phone {
+  right: 8px;
+  bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    top: 26px;
+    right: 26px;
+  }
+}
+
+.form-field__icon-mail {
+  right: 3px;
+  bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    top: 21px;
+    right: 22px;
+  }
+}
 
 .form-field__textarea {
-  padding: 8px;
-  font-size: 18px;
+  padding: 15px;
+  font-size: 17px;
   line-height: 18px;
   outline: none;
   color: #444444;
@@ -412,11 +498,10 @@
 
 .form-field__textarea-wrapper {
   @media (max-width: @mobile-width-only) {
-    border-top: 1px solid #56c3b2;
+    margin: 14px auto;
+    display: flex;
+    flex-direction: column;
   }
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -435,7 +520,7 @@
     display: inline-block;
     background-color: #ffffff;
     position: relative;
-    top: -9px;
+    top: 5px;
     align-self: flex-start;
   }
 }

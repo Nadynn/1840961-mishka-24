@@ -98,9 +98,9 @@
               <fieldset class="form-field__set form-field__color">
                 <legend class="form-field__title visually-hidden">Цвет</legend>
                 <span class="form-field__border-mobile"></span>
-                <p class="form-field__name">Цвет</p>
+                <p class="form-field__name form-field__name-2">Цвет</p>
                 <ul class="form-field__filter-list form-field__filter-list--color">
-                  <li class="form-field__filter-item">
+                  <li class="form-field__filter-item form-field__filter-item-box">
                     <label class="form-field__label form-field__label--checkbox">
                       <input class="form-field__control-input visually-hidden" type="checkbox" name="color" value="white"
                         id="white" checked>
@@ -108,7 +108,7 @@
                       <span class="form-field__control-label">Белый</span>
                     </label>
                   </li>
-                  <li class="form-field__filter-item">
+                  <li class="form-field__filter-item form-field__filter-item-box">
                     <label class="form-field__label form-field__label--checkbox">
                       <input class="form-field__control-input visually-hidden" type="checkbox" name="color" value="grey"
                         id="grey" checked>
@@ -116,7 +116,7 @@
                       <span class="form-field__control-label">Серый</span>
                     </label>
                   </li>
-                  <li class="form-field__filter-item">
+                  <li class="form-field__filter-item form-field__filter-item-box">
                     <label class="form-field__label form-field__label--checkbox">
                       <input class="form-field__control-input visually-hidden" type="checkbox" name="color" value="tiffany"
                         id="tiffany">
@@ -124,7 +124,7 @@
                       <span class="form-field__control-label">Тиффани</span>
                     </label>
                   </li>
-                  <li class="form-field__filter-item">
+                  <li class="form-field__filter-item form-field__filter-item-box">
                     <label class="form-field__label form-field__label--checkbox">
                       <input class="form-field__control-input visually-hidden" type="checkbox" name="color" value="black"
                         id="black">
@@ -132,7 +132,7 @@
                       <span class="form-field__control-label">Черный</span>
                     </label>
                   </li>
-                  <li class="form-field__filter-item">
+                  <li class="form-field__filter-item form-field__filter-item-box">
                     <label class="form-field__label form-field__label--checkbox">
                       <input class="form-field__control-input visually-hidden" type="checkbox" name="color" value="pink"
                         id="pink">
@@ -140,7 +140,7 @@
                       <span class="form-field__control-label">Розовый</span>
                     </label>
                   </li>
-                  <li class="form-field__filter-item">
+                  <li class="form-field__filter-item form-field__filter-item-box">
                     <label class="form-field__label form-field__label--checkbox">
                       <input class="form-field__control-input visually-hidden" type="checkbox" name="color" value="orange"
                         id="orange">
@@ -152,30 +152,30 @@
               </fieldset>
             </div>
             <div class="form-field__wrapper">
-              <fieldset class="form-field__set">
+              <fieldset class="form-field__set form-field__set-name">
                 <legend class="form-field__title visually-hidden">ФИО</legend>
-                <span class="form-field__border-mobile"></span>
-                <p class="form-field__name">ФИО</p>
+                <span class="form-field__border-mobile form-field__border-mobile-3"></span>
+                <p class="form-field__name form-field__name-3">ФИО</p>
                 <ul class="form-field__user-list">
                   <li class="form-field__user-item">
-                    <label class="form-field__input-label" for="name">
+                    <label class="form-field__input-label form-field__input-label--name" for="name">
                       Имя:
                     </label>
-                    <input class="form-field__input" type="text" name="user-name" placeholder="Введите ваше имя*" id="name"
+                    <input class="form-field__input form-field__input-name" type="text" name="user-name" placeholder="Введите ваше имя*" id="name"
                       required>
                   </li>
                   <li class="form-field__user-item">
                     <label class="form-field__input-label" for="surname">
                       Фамилия:
                     </label>
-                    <input class="form-field__input" type="text" name="user-surname" placeholder="Укажите фамилию*"
+                    <input class="form-field__input form-field__input-family" type="text" name="user-surname" placeholder="Укажите фамилию*"
                       id="surname" required>
                   </li>
                   <li class="form-field__user-item">
                     <label class="form-field__input-label" for="fathername">
                       Отчество:
                     </label>
-                    <input class="form-field__input" type="text" name="user-patronymic" placeholder="Отчество, если желаете"
+                    <input class="form-field__input form-field__input-father" type="text" name="user-patronymic" placeholder="Отчество, если желаете"
                       id="fathername">
                   </li>
                 </ul>
@@ -189,7 +189,7 @@
                   </label>
                   <input class="form-field__input form-field__input--contacts" type="tel" name="phone"
                     placeholder="+7 ХХХ ХХХ ХХ ХХ*" required id="phone-number">
-                    <svg class="form-field__icon" width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".2" fill="#000">
+                    <svg class="form-field__icon form-field__icon-phone" width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".2" fill="#000">
                         <path d="M17.44 24h-1.11c-4.939-.593-8.568-2.864-11.189-5.728C2.521 15.408.403 11.753 0 6.716V5.333c.1-.888.504-1.481 1.109-2.074.605-.69 1.613-1.481 2.52-1.58.706 0 1.815.494 2.218 1.087.403.493.605 1.58.806 2.37.202.889.605 1.975.504 2.765-.201 1.186-1.814 1.68-2.217 2.568 1.612 3.655 4.133 6.42 7.56 8.198.806-.494 1.613-1.877 2.823-1.877.403 0 1.008.198 1.41.297.505.098.908.296 1.311.493.706.297 2.017.593 2.42 1.186.403.592.705 1.58.605 2.172-.303 1.284-2.42 2.667-3.63 3.062ZM12.6 1.481c5.948 0 10.888 4.741 10.888 10.667H25C25 5.432 19.456 0 12.6 0v1.481Z"/><path d="M12.6 9.185v1.58c.807 0 1.412.593 1.412 1.383h1.613c0-1.58-1.31-2.963-3.024-2.963ZM12.6 6.124c3.327 0 6.15 2.666 6.15 6.024h1.613c0-4.148-3.427-7.506-7.661-7.506v1.482H12.6Z"/></g>
                     </svg>
                 </li>
@@ -199,7 +199,7 @@
                   </label>
                   <input class="form-field__input form-field__input--contacts-mail" type="email" name="email"
                     placeholder="Ваш Email*" required id="email">
-                    <svg class="form-field__icon" width="32" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="form-field__icon form-field__icon-mail" width="32" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path opacity=".2" d="M28 0H4C1.8 0 0 1.8 0 4v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4ZM2 5.3l7 5.3-7 5.3V5.3ZM30 17c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l7.8-5.9 4.4 3.3c.5.4 1.2.6 1.8.6.6 0 1.3-.2 1.8-.6l4.4-3.3L30 17Zm0-1.2-7-5.3 7-5.3v10.6Zm-12.8-2.2c-.4.3-.8.4-1.2.4-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 4c0-1.1.9-2 2-2h24c1.1 0 2 .9 2 2l-12.8 9.6Z" fill="#000"/>
                     </svg>
                 </li>

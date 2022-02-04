@@ -1,7 +1,7 @@
 .menu-nav {
   position: absolute;
   width: 100%;
-  top: 85px;
+  top: 80px;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -27,7 +27,7 @@
     width: 20px;
     height: 2px;
     background-color: #231f20;
-    box-shadow: 0 7px 0 0 #231f20, 0 14px 0 0 #231f20;
+    box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
   }
 }
 
@@ -88,19 +88,19 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 322px 346px;
+    grid-template-columns: 320px 346px;
     align-items: flex-start;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 716px 334px;
+    grid-template-columns: 701px 349px;
   }
 }
 
 .menu-nav__toggle {
   display: block;
   position: absolute;
-  top: -71px;
+  top: -65px;
   right: 17px;
   z-index: 2;
   width: 50px;
@@ -253,9 +253,9 @@
   @media (min-width: @desktop-width) {
     margin-top: 0;
     width: 716px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 186px 211px 252px;
     grid-template-rows: 88px;
-    column-gap: 35px;
+    column-gap: 34px;
   }
 }
 
@@ -290,7 +290,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 68px 267px;
+    grid-template-columns: 82px 267px;
     column-gap: 0;
   }
 }

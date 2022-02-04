@@ -1,11 +1,13 @@
 .contacts {
+  margin-bottom: 39px;
+
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     padding: 0 45px;
     width: 1050px;
     display: grid;
-    grid-template-columns: 143px 380px 527px;
-    margin-top: 71px;
+    grid-template-columns: 175px 350px 525px;
+    margin-top: 69px;
     margin-bottom: 105px;
   }
 }
@@ -25,9 +27,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
+    width: 350px;
     padding: 0;
-    padding-top: 71px;
+    padding-top: 80px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -44,12 +46,13 @@
   line-height: 30px;
   color: #000000;
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     width: 668px;
     text-align: start;
     margin: 0 auto;
+    margin-bottom: 18px;
     font-size: 43px;
     line-height: 50px;
 
@@ -68,6 +71,8 @@
     width: 100%;
     font-size: 53px;
     line-height: 57px;
+    padding: 0;
+    margin: 0;
 
     &::after {
       top: -18px;
@@ -82,7 +87,7 @@
   line-height: 30px;
   color: #444444;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 76px 183px;
   row-gap: 30px;
   margin-bottom: 62px;
 
@@ -91,19 +96,32 @@
     font-size: 17px;
     line-height: 30px;
     color: #444444;
-    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-template-columns: 78px 255px 79px 257px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 82px 1fr;
+    width: 350px;
+    grid-template-columns: 78px 241px;
+    margin-top: 35px;
+    margin-bottom: 81px;
+    row-gap: 30px;
   }
 }
 
 .contacts-link {
   text-decoration: none;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   border-bottom: 1px solid #62d1ba;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 8px;
+  }
 
   &:hover {
     color: #46c1ae;
@@ -111,7 +129,8 @@
   }
 
   &:active {
-    border-bottom: none;
+    border-bottom: 1px solid #46c1ae;
+    opacity: 0.1;
   }
 }
 
@@ -119,10 +138,10 @@
   display: flex;
   margin: auto;
   margin-bottom: 42px;
-  width: 320px;
+  height: 454px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 42px;
+    margin-bottom: 56px;
     width: 768px;
   }
 
@@ -136,14 +155,19 @@
   }
 }
 
+.contacts__map-container {
+  width: 100%;
+  height: 100%;
+}
+
 .contacts__write {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-bottom: 39px;
 
-  @media (min-width: @desktop-width) {
-    margin-bottom: 57px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 56px;
   }
 
   @media (min-width: @desktop-width) {

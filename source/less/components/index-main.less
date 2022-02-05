@@ -1,5 +1,5 @@
 .index-main {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   min-height: 177px;
   background-color: #f1f1f1;
@@ -8,18 +8,19 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 100%;
     min-height: 246px;
     background-image: url("/img/zigzag-fill.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: bottom;
   }
 
   @media (min-width: @desktop-width) {
     background-repeat: repeat-x;
-    width: 1150px;
+    width: 100%;
     min-height: 282px;
     background-size: 100%;
+    margin-bottom: 99px;
   }
 }
 
@@ -29,6 +30,7 @@
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     font-family: inherit;

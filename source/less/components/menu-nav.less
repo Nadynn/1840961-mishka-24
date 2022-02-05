@@ -131,11 +131,6 @@
   padding: 28px 0;
   width: 185px;
 
-  @media (min-width: @tablet-width) {
-    padding-left: 0;
-    height: min-content;
-  }
-
   &:hover {
     opacity: 0.6;
   }
@@ -145,23 +140,36 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-left: 0;
+    height: min-content;
+  }
+
+  @media (min-width: @tablet-width) {
     padding: 0;
     height: min-content;
   }
 }
 
+.menu-nav__link-icon {
+  opacity: 0.2;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+}
+
 .menu-nav__link svg {
-  fill: rgba(#000000, 20%);
   position: absolute;
   left: -36px;
 
   @media (min-width: @tablet-width) {
     left: 33px;
   }
-}
-
-.menu-nav__link:hover svg {
-  fill: #63d1bb;
 }
 
 .menu-nav__item {

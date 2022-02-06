@@ -1,6 +1,11 @@
 .form {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 .form__container {

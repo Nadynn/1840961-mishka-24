@@ -3,25 +3,21 @@
   display: flex;
   justify-content: center;
   background-color: #f1f1f1;
+  min-height: 143px;
 }
 
 .page-footer__container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 30px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    min-height: 143px;
     flex-direction: row;
-    margin: 0 auto;
-    padding: 0 45px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1150px;
-    padding: 0 45px;
   }
 }
 
